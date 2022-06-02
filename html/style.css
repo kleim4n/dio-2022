@@ -1,0 +1,26 @@
+#title, .subtitle, .post_title{
+	color: blue;
+}
+.post, footer{
+	background: white;
+	padding: 10px;
+	border: solid 2px black;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.post_title{
+	font-size: 16px;
+	font-style: italic;
+}
+.imgPost {
+	width: 50%;
+	height: auto;
+	border: solid 2px black;
+}
+.icones{
+	width: "32";
+	height: "32";
+}
+body{
+	background: gray;
+}
