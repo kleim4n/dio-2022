@@ -5,22 +5,33 @@
 	background: white;
 	padding: 10px;
 	border: solid 2px black;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin: 5px 10px;
+	
 }
 .post_title{
 	font-size: 16px;
 	font-style: italic;
+	font-weight: bold;
+	background-image: url("./img/bckImg.png");
+	text-transform: uppercase;
+	text-decoration: underline;
 }
 .imgPost {
 	width: 50%;
 	height: auto;
-	border: solid 2px black;
+	border: dotted 2px black;
 }
 .icones{
 	width: "32";
 	height: "32";
+	border: solid 1px black;
+	border-radius: 50%;
 }
 body{
-	background: gray;
+	background: #9B9DFF;
+	font-family: Verdana, Arial;
+	margin: auto;
+}
+ul li{
+	list-style-type: square;
 }
