@@ -24,6 +24,7 @@
 				padding: 0;
 				display: flex;
 				list-style: none;
+				border: 2px solid black;
 			}
 			.flex-item{
 				background-color: blue;
@@ -53,6 +54,12 @@
 			.item{
 				background-color: aqua;
 				margin: 5px;
+			}
+			.wrap{
+				flex-wrap: wrap;
+			}
+			.wrap-reverse{
+				flex-wrap: wrap-reverse;
 			}
 		</style>
 	</head>
@@ -100,5 +107,26 @@
 				<li class="flex-item">5</li>
 			</ul>
 		</div>
+		<div>
+			<h3>Wrap row</h3>
+			<ul class="wrap flex-conteiner">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Wrap reverse row</h3>
+			<ul class="wrap-reverse flex-conteiner">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
+		</div>
+		div>(h3{Wrap column}+ul.wrap.flex-conteiner.column>li.flex-item{$}*3)
 	</body>
 </html>
