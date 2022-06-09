@@ -2,9 +2,48 @@
 <html lang="pt-br">
 	<head>
 		<meta charset = "UTF-8">
-		<meta name = "viewport" content = "width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Fundamentos - display flex</title>
 		<style>
+			.column{
+				float: left;
+				flex-direction: column;
+			}
+			.column li{
+				background-color: orange;
+			}
+			.column-reverse{
+				float: right;
+				flex-direction: column-reverse;
+			}
+			.column-reverse li{
+				background-color: purple;
+			}
+			.flex-conteiner{
+				margin: 0;
+				padding: 0;
+				display: flex;
+				list-style: none;
+			}
+			.flex-item{
+				background-color: blue;
+				height: 50px;
+				width: 50px;
+				line-height: 50px;
+				font-size:20px;
+				color: white;
+				text-align: center;
+				margin: 5px;
+			}
+			.row{
+				flex-direction: row;
+			}
+			.row-reversed{
+				flex-direction: row-reverse;
+			}
+			.row-reversed li{
+				background-color: red;
+			}
 			.flex{
 				max-width: 300px;
 				padding: 10px;
@@ -19,9 +58,47 @@
 	</head>
 	<body>
 		<div class = "flex">
-			<div class = "item">Item 1</div>
-			<div class = "item">Item 2</div>
-			<div class = "item">Item 3</div>
+			<div class="item">Item 1</div>
+			<div class="item">Item 2</div>
+			<div class="item">Item 3</div>
+			<div class="item">Item 4</div>
+			<div class="item">Item 5</div>
+		</div>
+		<div>
+			<ul class="flex-conteiner row">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="flex-conteiner row-reversed">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="flex-conteiner column">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="flex-conteiner column-reverse">
+				<li class="flex-item">1</li>
+				<li class="flex-item">2</li>
+				<li class="flex-item">3</li>
+				<li class="flex-item">4</li>
+				<li class="flex-item">5</li>
+			</ul>
 		</div>
 	</body>
 </html>
