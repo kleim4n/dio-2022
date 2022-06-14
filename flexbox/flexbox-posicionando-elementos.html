@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Flexbox: Posicionando elementos</title>
+	<style>
+		.item{
+			background-color: blue;
+			text-align: center;
+			border: 1px solid black;
+			margin: 5px;
+			color: white;
+		}
+		.flex-conteiner{
+			border: 1px solid black;
+			margin: 2px;
+			display: flex;
+		}
+		.flex-start{
+			justify-content: flex-start;
+		}
+		.flex-end{
+			justify-content: flex-end;
+		}
+		.flex-center{
+			justify-content: center;
+		}
+		.flex-space-between{
+			justify-content: space-between;
+		}
+		.flex-space-around{
+			justify-content: space-around;
+		}
+		.column{
+			flex-direction: column;
+			min-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<p>flex-start</p>
+	<section class="flex-conteiner flex-start">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-end</p>
+	<section class="flex-conteiner flex-end">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-center</p>
+	<section class="flex-conteiner flex-center">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-space-between</p>
+	<section class="flex-conteiner flex-space-between">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-space-around</p>
+	<section class="flex-conteiner flex-space-around">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-start column</p>
+	<section class="flex-conteiner flex-start column">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-end column</p>
+	<section class="flex-conteiner flex-end column">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-center column</p>
+	<section class="flex-conteiner flex-center column">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-space-between column</p>
+	<section class="flex-conteiner flex-space-between column">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+	<p>flex-space-around column</p>
+	<section class="flex-conteiner flex-space-around column">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</section>
+</body>
+</html>
