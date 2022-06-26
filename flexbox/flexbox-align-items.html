@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Flexbox: Align Items</title>
+	<style>
+		body{
+			background-color: lightgreen;
+		}
+		.item{
+			background-color: green;
+			margin: 5px;
+			color: white;
+			text-align: center;
+			padding: 5px;
+			border: 1px solid black;
+			flex: 1;
+		}
+		.conteiner{
+			max-width: 350px;
+			border: 1px solid black;
+			display: flex;
+		}
+		.center{
+			align-items: center;
+		}
+		.scretch{
+			align-items: scretch;
+		}
+		.flex-start{
+			align-items: flex-start;
+		}
+		.flex-end{
+			align-items: flex-end;
+		}
+		.baseline{
+			align-items: baseline;
+		}
+		.column{
+			flex-direction: column;
+		}
+		.central{
+			height: 400px;
+			justify-content: center;
+		}
+		.central .item{
+			flex: 0;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>center</h1>
+	<section class="conteiner center">
+		<div class="item">Item 1</div>
+		<div class="item">Item 222222222</div>
+		<div class="item">Item 3</div>
+	</section>
+	<p>stretch</p>
+	<section class="conteiner scretch">
+		<div class="item">Item 1</div>
+		<div class="item">Item 222222222</div>
+		<div class="item">Item 3</div>
+	</section>
+	<p>flex-start</p>
+	<section class="conteiner flex-start">
+		<div class="item">Item 1</div>
+		<div class="item">Item 222222222</div>
+		<div class="item">Item 3</div>
+	</section>
+	<p>flex-end</p>
+	<section class="conteiner flex-end">
+		<div class="item">Item 1</div>
+		<div class="item">Item 22222222222</div>
+		<div class="item">Item 3</div>
+	</section>
+	<p>baseline</p>
+	<section class="conteiner baseline">
+		<div class="item"><br>Item 1</div>
+		<div class="item">Item 2222222222</div>
+		<div class="item">Item 3</div>
+	</section>
+	<p>alinhamento central</p>
+	<section class="conteiner central center">
+		<div class="item">Este é um paragrafo longo pra exemplificar o comportamento do texto.</div>
+	</section>
+</body>
+</html>
